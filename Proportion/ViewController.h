@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FontAwesomeKit/FAKFontAwesome.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *fromX;
+@property (weak, nonatomic) IBOutlet UITextField *fromY;
+
+@property (weak, nonatomic) IBOutlet UITextField *toX;
+@property (weak, nonatomic) IBOutlet UITextField *toY;
 
 @end
 
